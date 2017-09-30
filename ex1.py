@@ -23,6 +23,24 @@ print(username,type(username))
 #print(user)
 #print(password)
 
+import getpass
+user=input('用户名: ')
+password=getpass.getpass('密码: ')
 
-	
+#print('这是用户输入的用户名 ',user)
+#print('这是用户输入的密码 ',password)
 
+print('用户名是: %s 密码是: %s' %(user,password))
+
+
+#猜年龄
+age=21
+inp=input('您来猜猜我的年纪: ')
+res=int(inp)
+
+if res > age:
+	print('猜大了')
+elif res < age:
+	print('猜小了')
+else:
+	print('猜对了')
